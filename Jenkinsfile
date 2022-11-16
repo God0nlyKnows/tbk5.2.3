@@ -38,7 +38,7 @@ pipeline {
                 sh 'mvn package'
             }
         }
-        stage('Deplot to docker hub'){
+        stage('Deploy to hub'){
         agent{
             docker {
                                     image 'mmiotkug/node-curl'
